@@ -7,6 +7,74 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <!--StackPanel-->
+        <StackPanel Orientation = "Vertical">
 
+            <!--EntityComboBox-->
+            <ComboBox Name = "EntityComboBox"
+                  Height = "30"
+                  Width = "160"
+                  VerticalAlignment = "Top"
+                  HorizontalAlignment = "Left"
+                  Margin = "5"
+                  FontSize = "18">
+            </ComboBox>
+
+            <!--Select Button-->
+            <Button Name = "ButtonSelect"
+                    Height = "50"
+                    Width = "120"
+                    HorizontalAlignment = "Left"
+                    Margin = "25"
+                    Content = "Select"
+                    FontSize = "22"
+                    FontWeight = "Bold"
+                    Click = "ButtonSelect_Click">
+            </Button>
+
+            <!--Update Button-->
+            <Button Name = "ButtonUpdate"
+                    Height = "50"
+                    Width = "120"
+                    HorizontalAlignment = "Left"
+                    Margin = "25"
+                    Content = "Update"
+                    FontSize = "22"
+                    FontWeight = "Bold"
+                    Click = "ButtonUpdate_Click">
+            </Button>
+
+            <!--Delete Button-->
+            <Button Name = "ButtonDelete"
+                    Height = "50"
+                    Width = "120"
+                    HorizontalAlignment = "Left"
+                    Margin = "25"
+                    Content = "Delete"
+                    FontSize = "22"
+                    FontWeight = "Bold"
+                    Click = "ButtonDelete_Click">
+            </Button>
+        </StackPanel>
+
+        <!--TextBox-->
+        <TextBox Name = "textBox"
+                 Height = "25"
+                 Width = "600"
+                 VerticalAlignment = "Top"
+                 HorizontalAlignment = "Right"
+                 Margin = "5"
+                 FontSize = "15">
+        </TextBox>
+
+        <!--DataGridView-->
+        <DataGrid Name = "DataGridView"
+                  Height = "370"
+                  Width = "600"
+                  VerticalAlignment = "Bottom"
+                  HorizontalAlignment = "Right"
+                  Margin = "5"
+                  SelectionChanged = "DataGridView_SelectionChanged">
+        </DataGrid>
     </Grid>
 </Window>

@@ -7,12 +7,12 @@ public class LibraryDbContext : DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        string connectionString = "Data Source = STHQ012B-07;" +
-            "User ID = admin;" +
-            "Password = admin;" +
+        string connectionString = "Data Source = DESKTOP-RH41O1K\\SQLEXPRESS;" +
+            "Initial Catalog = Library_Db_1;" +
+            "Integrated Security = True;" +
             "Connect Timeout = 30;" +
-            "Encrypt = False;" +
-            "Trust Server Certificate = False;" +
+            "Encrypt = True;" +
+            "Trust Server Certificate = True;" +
             "Application Intent = ReadWrite;" +
             "Multi Subnet Failover = False";
 
@@ -31,7 +31,7 @@ public class LibraryDbContext : DbContext
     public DbSet<Book> Books { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<Department> Departments { get; set; }
-    public DbSet<Faculty> Faculties { get; set;}
+    public DbSet<Faculty> Faculties { get; set; }
     public DbSet<Group> Groups { get; set; }
     public DbSet<Lib> Libs { get; set; }
     public DbSet<Press> Press { get; set; }

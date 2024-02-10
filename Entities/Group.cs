@@ -1,4 +1,6 @@
-﻿namespace EF_Task_2.Entities;
+﻿using System.Collections.Generic;
+
+namespace EF_Task_2.Entities;
 
 public class Group : BaseEntity
 {
@@ -10,4 +12,5 @@ public class Group : BaseEntity
 
     // Navigation Properties
     public Faculty Faculty { get; set; }
+    public ICollection<Student> Students { get; set; }
 }

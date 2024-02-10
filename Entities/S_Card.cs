@@ -15,7 +15,7 @@ public class S_Card : BaseEntity
     public int Id_Lib { get; set; }
 
     // Navigation Properties
-    public Teacher Teacher { get; set; }
+    public Student Student { get; set; }
     public Book Book { get; set; }
     public Lib Lib { get; set; }
 }
